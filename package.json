@@ -1,0 +1,22 @@
+{
+  "name": "antonio-potfolio",
+  "version": "1.0.0",
+  "description": "Portfólio para expor minhas skills como desenvolvedor web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "antonio",
+    "carlos",
+    "desenvolvimento",
+    "web"
+  ],
+  "author": "Antonio Carlos",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^5.0.3"
+  }
+}
