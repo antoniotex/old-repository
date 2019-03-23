@@ -13,9 +13,9 @@ function htmlCopy(){
 }
 
 const minifyCSS = () => {
-       return gulp.src('css/*.css')
+       return src('css/*.css')
       .pipe(cleanCSS())
-      .pipe(gulp.dest('dist/css'));
+      .pipe(dest('dist/css'));
 }
 
-exports.default = series(htmlCopy, imageMinify)
+exports.default = series(htmlCopy, imageMinify, minifyCSS)
