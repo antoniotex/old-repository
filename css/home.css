@@ -1,5 +1,5 @@
 .home {
-  height: 84%;
+  height: 85%;
   display: grid;
   /* border: 1px solid red; */
   grid-template-columns: 1fr 1fr;

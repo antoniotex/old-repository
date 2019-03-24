@@ -1,0 +1,14 @@
+.sobre{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(255, 255, 0, 0.8);
+}
+
+.sobre-item-1, .sobre-item-2{
+  border: 1px solid red;
+  padding: 30px;
+}
+
+.sobre-item-1 p {
+  color: #000;
+}
