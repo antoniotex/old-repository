@@ -8,7 +8,8 @@ const htmlReplace = require('gulp-html-replace')
 const replaceHTML = () => {
   return src('index.html')
           .pipe(htmlReplace({
-            js: 'js/main.js'
+            js: 'js/main.js',
+            css: 'css/style.css'
           }))
           .pipe(dest('dist'))
 }
@@ -19,12 +20,9 @@ const imageMinify = () => {
           .pipe(dest('dist/images'))
 }
 
-// const htmlCopy = () => {
-//   return src('*.html').pipe(dest('dist'))
-// }
-
 const minifyCSS = () => {
        return src('css/*.css')
+       .pipe(concat('style.css'))
       .pipe(cleanCSS())
       .pipe(dest('dist/css'));
 }      
