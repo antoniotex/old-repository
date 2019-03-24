@@ -4,7 +4,7 @@
   "description": "Portfólio para expor minhas skills como desenvolvedor web.",
   "main": "index.js",
   "scripts": {
-    "deploy": "gulp && gh-pages -d dist"
+    "deploy": "gulp && gh-pages -d build"
   },
   "keywords": [
     "portfolio",

@@ -8,31 +8,30 @@ const htmlReplace = require('gulp-html-replace')
 const replaceHTML = () => {
   return src('index.html')
           .pipe(htmlReplace({
-            js: 'js/main.js',
-            css: 'css/style.css'
+            js: 'js/main.min.js',
+            css: 'css/style.min.css'
           }))
-          .pipe(dest('dist'))
+          .pipe(dest('build'))
 }
 
 const imageMinify = () => {
-  return src('images/*')
+  return src('src/images/*')
           .pipe(imagemin())
-          .pipe(dest('dist/images'))
+          .pipe(dest('build/images'))
 }
 
 const minifyCSS = () => {
-       return src('css/*.css')
-       .pipe(concat('style.css'))
-      .pipe(cleanCSS())
-      .pipe(dest('dist/css'));
-}      
+  return src('src/css/*.css')
+        .pipe(concat('style.min.css'))
+        .pipe(cleanCSS())
+        .pipe(dest('build/css'));
+}  
 
 const minifyScripts = async () => {
-  await src('js/*.js')
-  .pipe(concat('main.js'))
-  .pipe(uglify())
-  .pipe(dest('dist/js'))
+  await src('src/js/*.js')
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(dest('build/js'))
 }
 
-exports.replaceHTML = replaceHTML
 exports.default = series(replaceHTML, imageMinify, minifyCSS, minifyScripts)
