@@ -6,7 +6,7 @@ const concat = require('gulp-concat')
 const htmlReplace = require('gulp-html-replace')
 
 const replaceHTML = () => {
-  return src('index.html')
+  return src('src/index.html')
           .pipe(htmlReplace({
             js: 'js/main.min.js',
             css: 'css/style.min.css'

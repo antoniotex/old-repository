@@ -9,7 +9,10 @@
 body{
   background-image: url('../images/bg-1.jpeg');
   background-attachment: fixed;
+}
 
+.novoBack{
+  background-image: url('../images/work-1.jpg');
 }
 
 html, body {
@@ -22,4 +25,4 @@ main{
   /* border: 2px solid red; */
   width: 100%;
   height: 100%;
-} 
+}

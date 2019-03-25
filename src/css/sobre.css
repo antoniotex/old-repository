@@ -4,11 +4,21 @@
   background: rgba(255, 255, 0, 0.8);
 }
 
-.sobre-item-1, .sobre-item-2{
+.sobre p {
+  color: #000;
+}
+
+.sobre-item-1, .sobre-item-2, .sobre-item-3, .sobre-item-4{
   border: 1px solid red;
   padding: 30px;
 }
 
-.sobre-item-1 p {
-  color: #000;
+.sobre-item-2, .sobre-item-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-item-2 img, .sobre-item-3 img{
+  width: 400px;
 }

@@ -22,6 +22,22 @@
   font-size: 4rem;
 }
 
+#palavra::after{
+  content: '|';
+  margin-left: 2px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
 .home-item-1 h2{
   font-size: 1.7rem;
 }
