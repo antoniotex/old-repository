@@ -1,13 +1,11 @@
-// const botao = document.querySelector('[data-botao]')
+// Efeito máquina de escrever
 var tecnologias = [
   {tecnologia: 'HTML5', cor: 'orange'},
   {tecnologia: 'CSS3', cor: 'blue'},
   {tecnologia: 'Javascript', cor: 'yellow'},
   {tecnologia: 'NodeJS', cor: 'green'},
 ]
-
 function escrevePalavra (elemento) {
-  console.log(elemento)
   tecnologias.map(function (tecnologia, index) {
     setTimeout(function () {
       elemento.innerHTML = ''
@@ -22,6 +20,24 @@ function escrevePalavra (elemento) {
   })
 }
 escrevePalavra(palavra)
-setInterval(() => {
+setInterval(function () {
   escrevePalavra(palavra)
 }, 16000);
+// Efeito máquina de escrever
+
+// ---------
+
+// Função que altera o background
+function alteraBG () {
+  var background = document.querySelector('body')
+  if(window.pageYOffset < 841){
+    background.classList.remove('bg-2')
+  }
+  if(window.pageYOffset > 841){
+    background.classList.add('bg-2')
+  }
+}
+window.addEventListener('scroll', function () {
+  console.log(window.pageYOffset)
+  alteraBG()
+})

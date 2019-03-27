@@ -3,6 +3,8 @@
   display: grid;
   /* border: 1px solid red; */
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
+  border-bottom: dotted 5px #000;
 }
 
 .home-item-1, .home-item-2{

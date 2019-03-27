@@ -7,8 +7,12 @@
 }
 
 body{
-  background-image: url('../images/bg-1.jpeg');
+  background-image: url('../images/bg-2.jpeg');
   background-attachment: fixed;
+}
+
+.bg-2{
+  background-image: url('../images/bg-1.jpeg');
 }
 
 .novoBack{
