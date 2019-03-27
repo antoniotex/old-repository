@@ -7,8 +7,11 @@
 }
 
 body{
-  background-image: url('../images/bg-2.jpeg');
   background-attachment: fixed;
+}
+
+.bg-1{
+  background-image: url('../images/bg-2.jpeg');
 }
 
 .bg-2{

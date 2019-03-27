@@ -31,13 +31,25 @@ setInterval(function () {
 function alteraBG () {
   var background = document.querySelector('body')
   if(window.pageYOffset < 841){
-    background.classList.remove('bg-2')
+    background.classList.add('bg-1')
   }
   if(window.pageYOffset > 841){
     background.classList.add('bg-2')
+  }else{
+    background.classList.remove('bg-2')
   }
 }
 window.addEventListener('scroll', function () {
-  console.log(window.pageYOffset)
   alteraBG()
+})
+alteraBG()
+// Função que altera o background
+
+// ---------
+
+// Função que alterna menu responsivo
+var hamburguer = document.querySelector('.hamburguer')
+var navMenu = document.querySelector('nav')
+hamburguer.addEventListener('click', function () {
+  navMenu.classList.toggle('openMenu')
 })

@@ -46,3 +46,9 @@
   width: 400px;
   border-radius: 30%;
 }
+
+@media screen and (max-width: 768px){
+  .home {
+    grid-template-columns: 1fr;
+  }
+}
