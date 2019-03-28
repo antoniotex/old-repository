@@ -1,8 +1,7 @@
 .contato{
-  /* padding: 60px; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-content: center;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
   background: #333;
 }
 
