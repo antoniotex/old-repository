@@ -1,39 +1,86 @@
 .sobre{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background: rgba(255, 255, 0, 1);
   margin-bottom: 200px;
-  padding: 40px 70px;
+  padding: 30px 0;
+}
+
+.sobre-1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* border: 8px solid lightcoral; */
+}
+
+.sobre-2{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* border: 8px solid lightcoral; */
 }
 
 .sobre p {
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
-.sobre p::after{
+/* .sobre p::after{
   content: '';
   display: block;
   width: 400px;
   margin: 50px auto;
   height: 2px;
   background: #222;
-}
+} */
 
-.sobre-item-1, .sobre-item-2, .sobre-item-3, .sobre-item-4{
+.sobre-item-1, .sobre-item-4{
+  padding: 0 40px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
-.sobre-item-2 img, .sobre-item-3 img{
+.sobre-item-2, .sobre-item-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-item-3 img, .sobre-item-2 img{
   border-radius: 100px;
-  width: 450px;
-  transition: .7s
+  width: 300px;
+  transition: .7s;
+  padding: 20px 0;
 }
 
 .sobre-item-2 img:hover, .sobre-item-3 img:hover{
   border-radius: 5px;
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+  .sobre-1{
+    display: flex;
+    flex-direction: column;
+  }
+  .sobre-2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 491px){
+  .sobre-item-3 img, .sobre-item-2 img{
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .sobre-item-2 img:hover, .sobre-item-3 img:hover{
+    border-radius: 10px;
+    transform: scale(1.00);
+  }
+  
+  .sobre-item-1, .sobre-item-4{
+    padding: 0 20px;
+  }
 }
