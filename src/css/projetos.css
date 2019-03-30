@@ -1,0 +1,31 @@
+.projetos{
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  margin: 200px 0;
+  background-color: tomato;
+}
+
+.projetos h2{
+  padding: 20px 0;
+}
+
+.projetos h2::after{
+  content: '';
+  width: 80%;;
+  height: 3px;
+  background: #ccc;
+  display: block;
+  margin: 2px auto;
+}
+
+.projeto{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  border: 2px solid white;
+}
+
+.card-projeto{
+  border: 2px solid lightseagreen;
+}

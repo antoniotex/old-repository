@@ -53,3 +53,15 @@ var navMenu = document.querySelector('nav')
 hamburguer.addEventListener('click', function () {
   navMenu.classList.toggle('openMenu')
 })
+
+var projetos = {
+  starWars: {
+    link: 'https://desafio-star-wars.firebaseapp.com/'
+  },
+  shoppingList: {
+    link: 'https://shopping-list-tx88.herokuapp.com/'
+  },
+  crudAngular: {
+    link: 'https://antoniotex.github.io/crud-angular/'
+  }
+}
