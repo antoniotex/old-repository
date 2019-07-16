@@ -16,7 +16,7 @@
   ],
   "author": "Antonio Carlos",
   "license": "ISC",
-  "homepage": "https://antoniotex.github.io/portfolio-2019",
+  "homepage": "https://antoniotex.github.io",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/polyfill": "^7.4.0",
