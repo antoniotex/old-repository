@@ -1,8 +1,11 @@
 nav{
   background: #222;
   position: fixed;
-  width: 60px;
+  width: 70px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 nav .nav-img{
   background: #000;
@@ -10,12 +13,14 @@ nav .nav-img{
   display: flex;
   justify-content: center;
   padding: 25px 0;
+  position: absolute;
+  top: 0;
 }
 nav .nav-img img{
   width: 50px;
   margin: 0 auto;
 }
-.nav-icons{
+ul.nav-icons{
   /* border: 1px solid red; */
   width: 100%;
   display: flex;
@@ -23,33 +28,44 @@ nav .nav-img img{
   align-items: center;
   justify-content: center;
 }
-.nav-icons img{
-  width: 20px;
-  margin: 10px 0;
+ul.nav-icons img{
+  width: 25px;
+  margin: 15px 0;
+  transition: .7s;
 }
-.icons-fl, .nav-title{
-  display: none;
-  opacity: 0;
-  transition: 2s
+.nav-title{
+  font-size: .6em;
+  font-weight: 300;
+  color: #08ffc8;
+  transition: .7s;
 }
-ul li{
-  border: 1px solid green;
+ul.nav-icons li{
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
+  cursor: pointer;
 }
-ul li:hover > .nav-title{
-  opacity: 1;
+ul.nav-icons li span{
+  width: 100%;
+  height: 100%;
+  position: absolute;
   display: flex;
-  transition: 2s;
+  justify-content: center;
+  align-items: center;
 }
-ul li:hover > .icons-br{
-  display: none;
+ul.nav-icons li span:nth-child(2),
+ul.nav-icons li span:nth-child(3){
   opacity: 0;
-  transition: 2s
+  transition: .4s;
 }
-.nav-title{
-  font-size: .7em;
+ul.nav-icons li:hover > span:nth-child(3){
+  opacity: 1;
+  transition: .4s;
+}
+ul.nav-icons li:hover > img:nth-child(1){
+  opacity: 0;
+  transition: .4s;
 }
