@@ -11,7 +11,7 @@ body{
   grid-template-columns: 1fr;
   background: url(../images/bg-1.jpeg);
   background-attachment: fixed;
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 html, body {
@@ -19,7 +19,7 @@ html, body {
   height: 100%;
 }
 main{
-  /* border: 1px solid green; */
   width: 100%;
   margin: 0 auto;
+  /* border: 4px solid blue; */
 }

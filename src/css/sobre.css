@@ -1,0 +1,62 @@
+section.sobre{
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #333;
+}
+
+section.sobre .sobre-photo, section.sobre .sobre-description{
+  width: 50%;
+  /* border: 4px dashed red; */
+}
+
+section.sobre .sobre-photo{
+  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+section.sobre .sobre-description{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+section.sobre .sobre-description p{
+  letter-spacing: .7px;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+
+section.sobre .sobre-photo .polaroid-photo{
+  transform: rotate(-10deg) scale(0.8);
+}
+section.sobre .sobre-photo .polaroid-photo:hover{
+  transform: rotate(0);
+}
+
+@media screen and (max-width: 1024px){
+  section.sobre{
+    flex-direction: column;
+    align-items: center;
+  }
+  section.sobre .sobre-photo{
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  section.sobre .sobre-description p{
+    margin: 10px 0;
+  }
+  section.sobre .sobre-photo .polaroid-photo{
+    transform: rotate(0);
+  }
+  section.sobre .sobre-photo, section.sobre .sobre-description{
+    width: 80%;
+    /* border: 4px dashed red; */
+  }
+}
