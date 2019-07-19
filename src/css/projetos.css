@@ -44,13 +44,19 @@ section.projetos .projetos-item span p{
   padding: 0 10px;
   margin: 30px 0;
 }
-.projetos-actions a{
+.projetos-actions a,
+.projetos-actions a:visited,
+.projetos-actions a::selection,
+.projetos-actions a:link,
+.projetos-actions a:active{
   border: 1px solid #08ffc8;
   border-radius: 15px;
   padding: 10px;
   cursor: pointer;
   transition: .5s;
   font-size: .7em;
+  background: none;
+  user-select: none;
 }
 .projetos-actions a:hover{
   background: rgba(0, 0, 0, .3)

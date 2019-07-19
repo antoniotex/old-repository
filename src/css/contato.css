@@ -18,7 +18,7 @@ section.contato form h2{
 }
 section.contato form input,
 section.contato form textarea{
-  border: 1px solid #333;
+  border: 1px solid #08ffc8;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   padding: 10px 20px;
