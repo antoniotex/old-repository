@@ -29,10 +29,33 @@
 }
 .titles{
   width: 100%;
-  padding: 40px 0;
+  max-width: 1920px;
+  padding: 40px 0 10px 0;
+  margin: 0 auto;
+  /* transform: scaleY(1.03) */
 }
 .titles h1{
   font-family: 'Lobster', cursive;
   text-align: center;
   font-size: 3.5em;
+}
+
+@media screen and (max-width: 1024px){
+  .polaroid-photo span{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .polaroid-photo{
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .polaroid-photo{
+    width: 65vw;
+    height: 65vw;
+  }
 }

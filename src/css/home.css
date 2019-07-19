@@ -68,27 +68,37 @@ section.home .home-item-2{
   section.home .home-item-2 .polaroid-photo{
     transform: rotate(0deg) scale(1)
   }
+  section.home .home-item-1 h1{
+    font-size: 10vw;
+  }
+  section.home .home-item-1 h2{
+    font-size: 6vw;
+  }
+  section.home .home-item-1 span{
+    font-size: 2.1vw;
+  }
 }
 
 @media screen and (max-width: 768px){
   section.home .home-item-1 h1{
-    font-size: 8vw;
+    font-size: 10vw;
   }
   section.home .home-item-1 h2{
-    font-size: 5.5vw;
+    font-size: 7vw;
   }
   section.home .home-item-1 span{
-    font-size: 2vw;
-  }
-  section.home .home-item-2 .polaroid-photo{
-    width: 40vw;
-    height: 40vw;
+    font-size: 2.5vw;
   }
 }
 
 @media screen and (max-width: 540px){
-  section.home .home-item-2 .polaroid-photo{
-    width: 60vw;
-    height: 65vw;
+  section.home .home-item-1 h1{
+    font-size: 11vw;
+  }
+  section.home .home-item-1 h2{
+    font-size: 8vw;
+  }
+  section.home .home-item-1 span{
+    font-size: 2.7vw;
   }
 }
