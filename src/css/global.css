@@ -39,10 +39,18 @@
   text-align: center;
   font-size: 3.5em;
 }
+footer{
+  width: 100%;
+  background: rgba(0, 0, 0, .9)
+}
+footer div{
+  text-align: center;
+  font-size: .8em;
+}
 
 @media screen and (max-width: 1024px){
   .polaroid-photo span{
-    font-size: 1em;
+    font-size: .9em;
   }
 }
 
@@ -51,11 +59,17 @@
     width: 60vw;
     height: 60vw;
   }
+  .polaroid-photo span{
+    font-size: .8em;
+  }
 }
 
 @media screen and (max-width: 540px){
   .polaroid-photo{
     width: 65vw;
     height: 65vw;
+  }
+  .polaroid-photo span{
+    font-size: .7em;
   }
 }

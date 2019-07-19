@@ -4,11 +4,13 @@ section.projetos{
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  background: rgba(0, 0, 0, .8);
 }
 section.projetos .projetos-item{
   width: 50%;
   height: 25vw;
   position: relative;
+  /* margin: 5px 5px; */
 }
 section.projetos .projetos-item img{
   width: 100%;
@@ -16,7 +18,7 @@ section.projetos .projetos-item img{
   object-fit: cover;
 }
 section.projetos .projetos-item span{
-  /* border: 1px solid green; */
+  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,5 +68,11 @@ section.projetos .projetos-item span p{
   section.projetos .projetos-item{
     width: 100%;
     height: 50vw;
+  }
+  section.projetos .projetos-item {
+    margin: 5px 3px;
+  }
+  section.projetos .projetos-item span{
+    border: 1px solid white;
   }
 }

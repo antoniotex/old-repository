@@ -1,0 +1,67 @@
+section.contato{
+  padding: 50px 0;
+  padding-left: 70px;
+  /* border: 1px solid red; */
+  background: rgba(0, 0, 0, 0.9)
+}
+section.contato form{
+  /* border: 2px solid green; */
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+section.contato form h2{
+  text-align: center;
+  margin: 15px 0;
+}
+section.contato form input,
+section.contato form textarea{
+  border: 1px solid #333;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  margin: 5px 0;
+  outline: none;
+}
+section.contato form input[type="submit"]{
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+
+}
+.social-networks{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.social-networks a{
+  /* border: 1px solid red; */
+  transition: .5s;
+}
+.social-networks img{
+  width: 50px;
+}
+.social-networks a:hover{
+  /* transform: scale(1.2); */
+  animation: animaLogo 1s linear infinite;
+}
+
+@media screen and (max-width: 1024px){
+  section.contato{
+    padding-left: 0;
+  }
+}
+
+@keyframes animaLogo{
+  0%{
+    transform: rotateY(0deg)
+  }
+  100%{
+    transform: rotateY(360deg)
+  }
+}
