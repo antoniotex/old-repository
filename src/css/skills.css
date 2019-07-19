@@ -57,3 +57,24 @@ section.skills{
     padding-left: 0;
   }
 }
+@media screen and (max-width: 540px){
+  .tab-panel{
+    justify-content: space-around;
+  }
+  .tab-panel .panel-item{
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 414px){
+  .tab-panel .panel-item{
+    width: 30vw;
+    height: 30vw;
+  }
+  .tab-container .button-container button{
+    width: 33.33%;
+    font-size: 1em;
+  }
+}

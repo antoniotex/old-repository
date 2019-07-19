@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./src/ -o",
-    "deploy": "gulp && gh-pages -d build -b master -m \"Atualiza Versão em Produção\""
+    "deploy": "gulp && gh-pages -d build -b master -m \"Atualiza Versão em Produção\"",
+    "homo": "gulp && firebase deploy"
   },
   "keywords": [
     "portfolio",
