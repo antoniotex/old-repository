@@ -47,6 +47,22 @@ section.skills{
   font-size: .9em;
   text-align: center;
   margin: 10px;
+  position: relative;
+}
+.tab-panel .panel-item:after{
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  display: block;
+  opacity: 0;
+  border: 3px dashed #08ffc8;
+  transition: .5s;
+  border-radius: 50%;
+  animation: rotateBorder 15s linear infinite;
+}
+.tab-panel .panel-item:hover:after{
+  opacity: 1;
 }
 .tab-panel .panel-item span:nth-child(2){
   color: #999;
@@ -77,5 +93,14 @@ section.skills{
   .tab-container .button-container button{
     width: 33.33%;
     font-size: 1em;
+  }
+}
+
+@keyframes rotateBorder{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
   }
 }
