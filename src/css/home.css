@@ -62,8 +62,12 @@ section.home .home-item-2{
     align-items: center;
     padding: 0  0 0 0;
   }
+  section.home .home-item-1{
+    height: 45%;
+  }
   section.home .home-item-2{
     align-items: flex-start;
+    height: 55%;
   }
   section.home .home-item-2 .polaroid-photo{
     transform: rotate(0deg) scale(1)
