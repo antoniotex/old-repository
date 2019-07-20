@@ -32,8 +32,6 @@
   max-width: 1920px;
   padding: 40px 0 10px 40px;
   margin: 0 auto;
-  /* transform: scaleY(1.03) */
-  border: 1px solid white;
   text-align: center;
 }
 .titles h1{
@@ -45,7 +43,6 @@ footer{
   width: 100%;
   background: rgba(0, 0, 0, .9);
   padding: 15px 0 15px 40px;
-  border: 1px solid red;
 }
 footer div{
   text-align: center;
@@ -55,6 +52,12 @@ footer div{
 @media screen and (max-width: 1024px){
   .polaroid-photo span{
     font-size: .9em;
+  }
+  .titles{
+    padding: 40px 0 10px 0;
+  }
+  footer{
+    padding: 15px 0 15px 0;
   }
 }
 
