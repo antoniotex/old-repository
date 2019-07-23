@@ -29,6 +29,8 @@ section.sobre .sobre-description p{
   letter-spacing: .7px;
   font-size: 1.2em;
   line-height: 30px;
+  text-align: justify;
+  text-indent: 5px;
 }
 
 section.sobre .sobre-photo .polaroid-photo{
