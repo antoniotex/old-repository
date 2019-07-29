@@ -18,9 +18,7 @@
 }
 .polaroid-photo span{
   color: $preto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centraliza;
   height: 20%;
   font-size: 1.3em;
   font-family: 'Rock Salt', cursive;

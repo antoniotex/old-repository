@@ -23,10 +23,8 @@ section.projetos{
       object-fit: cover;
     }
     span{
-      display: flex;
+      @include centraliza;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       position: absolute;
       top: 0;
       width: 100%;

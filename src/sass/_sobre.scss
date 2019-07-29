@@ -12,8 +12,7 @@ section.sobre .sobre-photo, section.sobre .sobre-description{
 
 section.sobre .sobre-photo{
   padding-left: 120px;
-  display: flex;
-  align-items: center;
+  @include centraliza;
   padding-top: 60px;
 }
 

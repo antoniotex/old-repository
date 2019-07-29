@@ -3,16 +3,14 @@ nav{
   position: fixed;
   width: 70px;
   height: 100%;
-  display: flex;
+  @include centraliza;
   flex-direction: column;
-  justify-content: center;
   z-index: 998;
 }
 nav .nav-img{
   background: $preto;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  @include centraliza;
   padding: 25px 0;
   position: absolute;
   top: 0;
@@ -22,12 +20,9 @@ nav .nav-img img{
   margin: 0 auto;
 }
 ul.nav-icons{
-  /* border: 1px solid red; */
   width: 100%;
-  display: flex;
+  @include centraliza;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 ul.nav-icons img{
   width: 25px;
@@ -44,24 +39,19 @@ ul.nav-icons img{
 ul.nav-icons li{
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centraliza;
   height: 50px;
   cursor: pointer;
 }
 ul.nav-icons li a{
   width: 100%;
-  display: flex;
-  justify-content: center;
+  @include centraliza;
 }
 ul.nav-icons li span{
   width: 100%;
   height: 100%;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centraliza;
 }
 ul.nav-icons li span:nth-child(2),
 ul.nav-icons li span:nth-child(3){
@@ -83,18 +73,14 @@ ul.nav-icons li a:hover > img:nth-child(1){
     position: fixed;
     width: 100%;
     height: 70px;
-    display: flex;
+    @include centraliza;
     flex-direction: row;
-    justify-content: center;
   }
   nav .nav-img{
-    /* border: 1px solid green; */
     background: $preto;
     width: 100px;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centraliza;
     padding: 0 0;
     position: absolute;
     top: 0;
@@ -104,15 +90,12 @@ ul.nav-icons li a:hover > img:nth-child(1){
     width: 90px;
   }
   ul.nav-icons{
-    /* border: 3px solid blue; */
     width: 80px;
     height: 100vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include centraliza;
     position: absolute;
-    top: 70px;
+    top: 0;
     left: 0;
     background: $cinza-escuro;
     transition: .5s;
@@ -124,9 +107,7 @@ ul.nav-icons li a:hover > img:nth-child(1){
     opacity: 0;
   }
   .hamburguer-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centraliza;
     position: absolute;
     height: 70px;
     right: 0;
