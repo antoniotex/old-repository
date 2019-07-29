@@ -30,7 +30,7 @@ section.home .home-item-1 span{
 }
 section.home .home-item-1 button{
   background: none;
-  border: 2px solid #08ffc8;
+  border: 2px solid $azul-principal;
   width: max-content;
   margin-top: 30px;
   padding: 10px 20px;
@@ -39,7 +39,7 @@ section.home .home-item-1 button{
   font-weight: 900;
 }
 section.home .home-item-1 button:hover{
-  background: #08ffc8;
+  background: $azul-principal;
   color: #222;
 }
 section.home .home-item-2{

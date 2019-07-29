@@ -13,7 +13,7 @@ sass.compiler = require('node-sass')
 // watch('src/sass/*.sass', ['sass']);
 
 function style(){
-  return src('./src/sass/*.scss')
+  return src('./src/sass/style.scss')
   .pipe(sass())
   .pipe(concat('style.css'))
   .pipe(dest('./src/css'))
@@ -31,17 +31,11 @@ function watch(){
   gulp.watch('./src/js/*.js').on('change', browserSync.reload)
 }
 
-const compileSass = () => {
-  return src('./src/sass/*.scss')
-          .pipe(sass().on('error', sass.logError))
-          .pipe(concat('style.css'))
-          .pipe(dest('./css'));}
-
 const replaceHTML = () => {
   return src('src/index.html')
           .pipe(htmlReplace({
-            js: 'js/main.min.js',
-            css: 'css/style.min.css'
+            js: 'main.min.js',
+            css: 'style.min.css'
           }))
           .pipe(dest('build'))
 }
@@ -56,16 +50,16 @@ const minifyCSS = () => {
   return src('src/css/*.css')
         .pipe(concat('style.min.css'))
         .pipe(cleanCSS())
-        .pipe(dest('build/css'));
+        .pipe(dest('build'));
 }  
 
 const minifyScripts = async () => {
   await src('src/js/*.js')
         .pipe(concat('main.min.js'))
         .pipe(uglify())
-        .pipe(dest('build/js'))
+        .pipe(dest('build'))
 }
 
 exports.default = series(replaceHTML, imageMinify, minifyCSS, minifyScripts)
-exports.style = style;
-exports.watch = watch;
+exports.style = style
+exports.watch = watch

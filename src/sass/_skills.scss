@@ -36,7 +36,7 @@ section.skills{
   height: 85%;
 }
 .tab-panel .panel-item{
-  border: 1px solid #08ffc8;
+  border: 1px solid $azul-principal;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -56,7 +56,7 @@ section.skills{
   height: 105%;
   display: block;
   opacity: 0;
-  border: 3px dashed #08ffc8;
+  border: 3px dashed $azul-principal;
   transition: .5s;
   border-radius: 50%;
   animation: rotateBorder 15s linear infinite;
@@ -76,7 +76,7 @@ section.skills{
   .tab-panel .panel-item:after{
     display: none;
     opacity: 1;
-    border: 2px dashed #08ffc8;
+    border: 2px dashed $azul-principal;
     width: 100%;
     height: 100%;
   }

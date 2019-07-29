@@ -37,7 +37,7 @@ ul.nav-icons img{
 .nav-title{
   font-size: .6em;
   font-weight: 300;
-  color: #08ffc8;
+  color: $azul-principal;
   transition: .7s;
   /* border: 1px solid red; */
 }
@@ -139,7 +139,7 @@ ul.nav-icons li a:hover > img:nth-child(1){
     display: block;
     width: 35px;
     height: 3px;
-    background: #08ffc8;
+    background: $azul-principal;
     position: absolute;
   }
   .hamburguer-wrapper span:before{
