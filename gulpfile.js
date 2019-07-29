@@ -1,9 +1,41 @@
-const {series, dest, src} = require('gulp')
+const { series, dest, src, task } = require('gulp')
+const gulp = require('gulp')
 const imagemin = require('gulp-imagemin')
 const cleanCSS = require('gulp-clean-css')
 const uglify = require('gulp-uglify')
 const concat = require('gulp-concat')
 const htmlReplace = require('gulp-html-replace')
+const sass = require('gulp-sass')
+const browserSync = require('browser-sync')
+
+sass.compiler = require('node-sass')
+
+// watch('src/sass/*.sass', ['sass']);
+
+function style(){
+  return src('./src/sass/*.scss')
+  .pipe(sass())
+  .pipe(concat('style.css'))
+  .pipe(dest('./src/css'))
+  .pipe(browserSync.stream())
+}
+
+function watch(){
+  browserSync.init({
+    server:{
+      baseDir: './src/'
+    }
+  })
+  gulp.watch('./src/sass/*.scss', style)
+  gulp.watch('./src/*.html').on('change', browserSync.reload)
+  gulp.watch('./src/js/*.js').on('change', browserSync.reload)
+}
+
+const compileSass = () => {
+  return src('./src/sass/*.scss')
+          .pipe(sass().on('error', sass.logError))
+          .pipe(concat('style.css'))
+          .pipe(dest('./css'));}
 
 const replaceHTML = () => {
   return src('src/index.html')
@@ -35,3 +67,5 @@ const minifyScripts = async () => {
 }
 
 exports.default = series(replaceHTML, imageMinify, minifyCSS, minifyScripts)
+exports.style = style;
+exports.watch = watch;
