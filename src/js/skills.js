@@ -4,25 +4,26 @@ var skills = {
     {skill: 'CSS3', level: 'Avançado'},
     {skill: 'Javascript ES6+', level: 'Avançado'},
     {skill: 'React', level: 'Intermediário'},
-    {skill: 'React Native', level: 'Básico'},
     {skill: 'Angular 2+', level: 'Intermediário'},
+    {skill: 'Bootstrap', level: 'Intermediário'},
+    {skill: 'React Native', level: 'Básico'},
     {skill: 'Vue', level: 'Básico'},
     {skill: 'UI / UX', level: 'Básico'},
-    {skill: 'Bootstrap', level: 'Intermediário'}
   ],
   backend: [
     {skill: 'NodeJS', level: 'Intermediário'},
     {skill: 'C# .NET', level: 'Intermediário'},
     {skill: 'REST API', level: 'Intermediário'},
-    {skill: 'MongoDB', level: 'Básico'},
     {skill: 'MySQL', level: 'Intermediário'},
+    {skill: 'MongoDB', level: 'Básico'},
     {skill: 'SQL Server', level: 'Básico'},
   ],
   outros: [
+    {skill: 'Testes Unitários', level: 'Básico'},
     {skill: 'SCRUM', level: 'Básico'},
     {skill: 'Docker', level: 'Básico'},
     {skill: 'Gulp', level: 'Básico'},
-    {skill: 'Photoshop', level: 'Básico'}
+    {skill: 'Photoshop', level: 'Básico'},
   ]
 }
 

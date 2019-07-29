@@ -25,7 +25,7 @@ function showPanel(index, color){
 }
 
 /**
- * Srcoll suave
+ * Scroll suave
  */
 var menuItems = document.querySelectorAll('ul li a[href^="#"')
 menuItems.forEach(function(item){
