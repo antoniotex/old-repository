@@ -1,5 +1,7 @@
 /node_modules
 /.vscode
+# Firebase
 /.firebase
+/.sass-cache
 /dist
 /build
