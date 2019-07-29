@@ -1,5 +1,5 @@
 nav{
-  background: #222;
+  background: $cinza-escuro;
   position: fixed;
   width: 70px;
   height: 100%;
@@ -9,7 +9,7 @@ nav{
   z-index: 998;
 }
 nav .nav-img{
-  background: #000;
+  background: $preto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@ ul.nav-icons li a:hover > img:nth-child(1){
 
 @media screen and (max-width: 1024px){
   nav{
-    background: #000;
+    background: $preto;
     position: fixed;
     width: 100%;
     height: 70px;
@@ -89,7 +89,7 @@ ul.nav-icons li a:hover > img:nth-child(1){
   }
   nav .nav-img{
     /* border: 1px solid green; */
-    background: #000;
+    background: $preto;
     width: 100px;
     height: 100%;
     display: flex;
@@ -114,7 +114,7 @@ ul.nav-icons li a:hover > img:nth-child(1){
     position: absolute;
     top: 70px;
     left: 0;
-    background: #222;
+    background: $cinza-escuro;
     transition: .5s;
     opacity: 1;
     transform: translateY(0);
